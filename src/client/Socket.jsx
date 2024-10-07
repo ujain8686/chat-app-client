@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import io from "socket.io-client";
 
-const socket = io.connect("https://chat-app-server-eight-phi.vercel.app/");
+const socket = io.connect("https://chat-app-server-eight-phi.vercel.app:3001");
 
 const Socket = () => {
   const [userID, setUserID] = useState(null);
